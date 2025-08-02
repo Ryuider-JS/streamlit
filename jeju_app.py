@@ -6,7 +6,7 @@ from folium.plugins import MarkerCluster
 
 st.title("제주도에서 가장 핫한 곳은?")
 
-df = pd.read_csv("./map/jeju_place.csv")
+df = pd.read_csv("./jeju_place.csv")
 
 m = folium.Map([sum(df["위도"])/len(df["위도"]), sum(df["경도"])/len(df["경도"])], zoom_start=9)
 
